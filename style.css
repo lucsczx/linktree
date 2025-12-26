@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.perfil {
+    width: 120px;
+    height: 120px;      /* deixa a imagem quadrada */
+    border-radius: 50%;
+    object-fit: cover; /* corta sem distorcer */
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.descricao {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.link {
+    width: 100%;              /* ocupa todo o container */
+    max-width: 320px;         /* tamanho padrão */
+    
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background: #111;
+    color: white;
+    padding: 16px;            /* botão mais alto */
+    font-size: 16px;          /* texto padrão */
+    border-radius: 14px;
+    margin-bottom: 16px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.link:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.9);
+    background: #222;
+}
+
+/* Botões de categoria */
+.link.categoria {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    font-weight: bold;
+}
